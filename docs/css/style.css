@@ -868,3 +868,47 @@ border: 2px solid #fff;
 	animation-delay: 1.2s; 
 	-webkit-animation-delay: 1.2s; 
 }
+
+
+.nav-tabs.nav-justified li a {
+    color: black;
+    font-size: 1.2em;
+}
+
+.nav-link.active.show {
+    background-color: #eeeeee;
+}
+
+.modal.fade.show {
+	opacity: 1 !important;
+	background-color: rgba(0, 0, 0, .7);
+}
+.modal-dialog {
+	padding-top: 200px;
+	opacity: 1 !important;
+}
+.thumbnail_image {
+	height:200px;
+	width: 100%;
+	cursor: pointer;
+}
+
+.thumbnail {
+	padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+img.modal-image {
+    width: 100%;
+}
+
+.model-heading {
+	color: black;
+}
+
+
+.modal-body {
+	text-align:center;
+	color: black;
+}

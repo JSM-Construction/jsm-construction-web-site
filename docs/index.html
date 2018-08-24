@@ -5,20 +5,21 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, maximum-scale=1">
 
-	<title>Homepage</title>
+	<title>JSM Construction</title>
 	<link rel="icon" href="favicon.png" type="image/png">
 	<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
 
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
 
-	<!-- <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet"> -->
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
 	<link href="css/responsive.css" rel="stylesheet" type="text/css">
 	<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
 	<link href="css/animate.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/photoswipe.css" type="text/css">
+	<link rel="stylesheet" href="css/default-skin/default-skin.css" type="text/css"> 
 
 	<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
@@ -28,7 +29,11 @@
 	<script type="text/javascript" src="js/wow.js"></script>
 	<script type="text/javascript" src="js/classie.js"></script>
 	<script type="text/javascript" src="js/magnific-popup.js"></script>
+	<script type="text/javascript" src="js/photoswipe.min.js"></script> 
+	<script type="text/javascript" src="js/photoswipe-ui-default.min.js"></script> 
+
 	<script src="contactform/contactform.js"></script>
+	
 
 	<!-- =======================================================
     Theme Name: Knight
@@ -74,7 +79,7 @@
 		<div class="container">
 			<h2>Services</h2>
 			<!-- <h6>We offer exceptional service with complimentary hugs.</h6> -->
-			
+			<br>
 			
 			<div class="row">
 				<div class="col-sm-12">
@@ -83,7 +88,7 @@
 							<!-- Nav tabs -->
 							<ul class="nav nav-tabs nav-justified" role="tablist">
 									<li class="nav-item"> <a class="nav-link active show" data-toggle="tab" href="#comercial" role="tab" aria-selected="true"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Commercial</span></a> </li>
-									<li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#homes" role="tab" aria-selected="false"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Homes</span></a> </li>
+									<li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#homes" role="tab" aria-selected="false"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Residential</span></a> </li>
 									<li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#governmet" role="tab" aria-selected="false"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Government</span></a> </li>
 									<li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#other" role="tab" aria-selected="false"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Other</span></a> </li>
 							</ul>
@@ -97,41 +102,145 @@
 									<div class="row">
 										<div class="col-sm-12 col-md-3">
 											<div class="thumbnail">
-												<img src="img/download.svg" alt="...">
+												<a data-toggle="modal" data-target="#comercial1">
+													<img class="thumbnail_image" src="portfolio/commercial/1.jpg" alt="...">
+												</a>
 												<div class="caption">
-												<h4>Thumbnail label</h4>
-												<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-												<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+													<h4>Endinbrough Food Factory</h4>
+													<p>
+														A project done for Endinbrough food (pvt) ltd. Project value is up to 9 Million rupees. Projetc complietion is 100%.
+													</p>
+													<br>
+													<p><a class="btn btn-primary" role="button" data-toggle="modal" data-target="#comercial1">More info</a>
+												</div>
+												<!-- Modal -->
+												<div class="modal fade" id="comercial1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+													<div class="modal-dialog" role="document">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																<h4 class="modal-title" id="myModalLabel">Endinbrough Food Factory</h4>
+															</div>
+															<div class="modal-body">
+																	<img class="modal-image" src="portfolio/commercial/1.jpg" alt="...">
+																	
+																	<h4 class="model-heading" >Endinbrough Food Factory</h4>
+																	A project done for Endinbrough food (pvt) ltd. Project value is up to 9 Million rupees. Projetc complietion is 100%.
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+															</div>
+														</div>							
+													</div>
 												</div>
 											</div>
 										</div>
 										<div class="col-sm-12 col-md-3">
 											<div class="thumbnail">
-												<img src="img/download.svg" alt="...">
+												<a data-toggle="modal" data-target="#comercial2">
+													<img class="thumbnail_image" src="portfolio/commercial/2.jpg" alt="...">
+												</a>
 												<div class="caption">
-												<h4>Thumbnail label</h4>
-												<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-												<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+													<h4>Aitken Spence Hotel</h4>
+													<p>
+															A project done for Aitken Spence Hotel (pvt) Ltd. Project value is up to 2 Million rupees. Projetc complietion is 100%.
+													</p>
+													<br>
+													<p><a class="btn btn-primary" role="button" data-toggle="modal" data-target="#comercial2">More info</a>
+												</div>
+												<!-- Modal -->
+												<div class="modal fade" id="comercial2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+													<div class="modal-dialog" role="document">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																<h4 class="modal-title" id="myModalLabel">Aitken Spence Hotel</h4>
+															</div>
+															<div class="modal-body">
+																	<img class="modal-image" src="portfolio/commercial/2.jpg" alt="...">
+																	
+																	<h4 class="model-heading" >Aitken Spence Hotel</h4>
+																	A project done for Aitken Spence Hotel (pvt) Ltd. Project value is up to 2 Million rupees. Projetc complietion is 100%.
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+															</div>
+														</div>							
+													</div>
 												</div>
 											</div>
 										</div>
 										<div class="col-sm-12 col-md-3">
 											<div class="thumbnail">
-												<img src="img/download.svg" alt="...">
+												<a data-toggle="modal" data-target="#comercial3">
+													<img class="thumbnail_image" src="portfolio/commercial/3.jpg" alt="...">
+												</a>
 												<div class="caption">
-												<h4>Thumbnail label</h4>
-												<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-												<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+													<h4>Burger King at Ja-ela</h4>
+													<p>
+														A project done for Softlogic (pvt) ltd. Project value is up to 40 Million rupees. Projetc complietion is 100%.
+													</p>
+													<br>
+													<p><a class="btn btn-primary" role="button" data-toggle="modal" data-target="#comercial3">More info</a>
+												</div>
+												<!-- Modal -->
+												<div class="modal fade" id="comercial3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+													<div class="modal-dialog" role="document">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																<h4 class="modal-title" id="myModalLabel">Burger King at Ja-ela</h4>
+															</div>
+															<div class="modal-body">
+																	<img class="modal-image" src="portfolio/commercial/3.jpg" alt="...">
+																	
+																	<h4 class="model-heading" >Burger King at Ja-ela</h4>
+																	A project done for Softlogic (pvt) ltd. Project value is up to 40 Million rupees. Projetc complietion is 100%.
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+															</div>
+														</div>							
+													</div>
 												</div>
 											</div>
 										</div>
 										<div class="col-sm-12 col-md-3">
 											<div class="thumbnail">
-												<img src="img/download.svg" alt="...">
+												<a data-toggle="modal" data-target="#comercial4">
+													<img class="thumbnail_image" src="portfolio/commercial/4.jpg" alt="...">
+												</a>
 												<div class="caption">
-												<h4>Thumbnail label</h4>
-												<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-												<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+													<h4>Kinnaree restuarent</h4>
+													<p>
+														A project done for Earls court (pvt) ltd. Project value is up to 7 Million rupees. Projetc complietion is 100%.
+													</p>
+													<br>
+													<p><a class="btn btn-primary" role="button" data-toggle="modal" data-target="#comercial4">More info</a>
+												</div>
+												<!-- Modal -->
+												<div class="modal fade" id="comercial4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+													<div class="modal-dialog" role="document">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																<h4 class="modal-title" id="myModalLabel">Kinnaree restuarent</h4>
+															</div>
+															<div class="modal-body">
+																	<img class="modal-image" src="portfolio/commercial/4.jpg" alt="...">
+																	
+																	<h4 class="model-heading" >Kinnaree restuarent</h4>
+																	A project done for Earls court (pvt) ltd. Project value is up to 7 Million rupees. Projetc complietion is 100%.
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+															</div>
+														</div>							
+													</div>
 												</div>
 											</div>
 										</div>
@@ -139,33 +248,150 @@
 								</div>
 								<div class="tab-pane" id="homes" role="tabpanel">
 									<div class="row">
-										<div class="col-sm-4 col-md-3">
+										<div class="col-sm-12 col-md-3">
 											<div class="thumbnail">
-												<img src="img/download.svg" alt="...">
+												<a data-toggle="modal" data-target="#residential1">
+													<img class="thumbnail_image" src="portfolio/residential/1.jpg" alt="...">
+												</a>
 												<div class="caption">
-												<h4>Thumbnail label</h4>
-												<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-												<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+													<h4>Prime Homes Apartment Complex</h4>
+													<p>
+															A project done for The Prime Home Residencies (pvt) ltd. Project value is up to 113 Million rupees. Projetc complietion is 100%.
+													</p>
+													<br>
+													<p><a class="btn btn-primary" role="button" data-toggle="modal" data-target="#residential1">More info</a>
+												</div>
+												<!-- Modal -->
+												<div class="modal fade" id="residential1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+													<div class="modal-dialog" role="document">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																<h4 class="modal-title" id="myModalLabel">Prime Homes Apartment Complex</h4>
+															</div>
+															<div class="modal-body">
+																	<img class="modal-image" src="portfolio/residential/1.jpg" alt="...">
+																	
+																	<h4 class="model-heading" >Prime Homes Apartment Complex</h4>
+																	A project done for The Prime Home Residencies (pvt) ltd. Project value is up to 113 Million rupees. Projetc complietion is 100%.
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+															</div>
+														</div>							
+													</div>
 												</div>
 											</div>
 										</div>
-										<div class="col-sm-4 col-md-3">
+
+										<div class="col-sm-12 col-md-3">
 											<div class="thumbnail">
-												<img src="img/download.svg" alt="...">
+												<a data-toggle="modal" data-target="#residential2">
+													<img class="thumbnail_image" src="portfolio/residential/2.jpeg" alt="...">
+												</a>
 												<div class="caption">
-												<h4>Thumbnail label</h4>
-												<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-												<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+													<h4>House at Thalapathpitiya</h4>
+													<p>
+															A project done for Dr.Ajith Priyantha. Project value is up to 30 Million rupees. Projetc complietion is 100%.
+													</p>
+													<br>
+													<p><a class="btn btn-primary" role="button" data-toggle="modal" data-target="#residential2">More info</a>
+												</div>
+												<!-- Modal -->
+												<div class="modal fade" id="residential2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+													<div class="modal-dialog" role="document">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																<h4 class="modal-title" id="myModalLabel">House at Thalapathpitiya</h4>
+															</div>
+															<div class="modal-body">
+																	<img class="modal-image" src="portfolio/residential/2.jpeg" alt="...">
+																	
+																	<h4 class="model-heading" >House at Thalapathpitiya</h4>
+																	A project done for Dr.Ajith Priyantha. Project value is up to 30 Million rupees. Projetc complietion is 100%.
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+															</div>
+														</div>							
+													</div>
 												</div>
 											</div>
 										</div>
-										<div class="col-sm-4 col-md-3">
+
+										<div class="col-sm-12 col-md-3">
 											<div class="thumbnail">
-												<img src="img/download.svg" alt="...">
+												<a data-toggle="modal" data-target="#residential3">
+													<img class="thumbnail_image" src="portfolio/residential/3.jpeg" alt="...">
+												</a>
 												<div class="caption">
-												<h4>Thumbnail label</h4>
-												<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-												<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+													<h4>House at Palawattha</h4>
+													<p>
+														A project done for Regent Residencies Ltd. Project value is up to 9 Million rupees. Projetc complietion is 100%.
+													</p>
+													<br>
+													<p><a class="btn btn-primary" role="button" data-toggle="modal" data-target="#residential3">More info</a>
+												</div>
+												<!-- Modal -->
+												<div class="modal fade" id="residential3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+													<div class="modal-dialog" role="document">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																<h4 class="modal-title" id="myModalLabel">House at Palawattha</h4>
+															</div>
+															<div class="modal-body">
+																	<img class="modal-image" src="portfolio/residential/3.jpeg" alt="...">
+																	
+																	<h4 class="model-heading" >House at Palawattha</h4>
+																	A project done for Regent Residencies Ltd. Project value is up to 9 Million rupees. Projetc complietion is 100%.
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+															</div>
+														</div>							
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-sm-12 col-md-3">
+											<div class="thumbnail">
+												<a data-toggle="modal" data-target="#residential4">
+													<img class="thumbnail_image" src="portfolio/residential/4.jpeg" alt="...">
+												</a>
+												<div class="caption">
+													<h4>Model House</h4>
+													<p>
+															A project done for Home Land (Pvt) Ltd. Project value is up to 6 Million rupees. Projetc complietion is 100%.
+													</p>
+													<br>
+													<p><a class="btn btn-primary" role="button" data-toggle="modal" data-target="#residential4">More info</a>
+												</div>
+												<!-- Modal -->
+												<div class="modal fade" id="residential4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+													<div class="modal-dialog" role="document">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																<h4 class="modal-title" id="myModalLabel">Model House</h4>
+															</div>
+															<div class="modal-body">
+																	<img class="modal-image" src="portfolio/residential/4.jpeg" alt="...">
+																	
+																	<h4 class="model-heading" >Model House</h4>
+																	A project done for Home Land (Pvt) Ltd. Project value is up to 6 Million rupees. Projetc complietion is 100%.
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+															</div>
+														</div>							
+													</div>
 												</div>
 											</div>
 										</div>
@@ -173,60 +399,306 @@
 								</div>
 								<div class="tab-pane" id="governmet" role="tabpanel">
 									<div class="row">
-										<div class="col-sm-4 col-md-3">
+										<div class="col-sm-12 col-md-3">
 											<div class="thumbnail">
-												<img src="img/download.svg" alt="...">
+												<a data-toggle="modal" data-target="#governmet1">
+													<img class="thumbnail_image" src="portfolio/government/1.jpeg" alt="...">
+												</a>
 												<div class="caption">
-												<h4>Thumbnail label</h4>
-												<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-												<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+													<h4>Endinbrough Food Factory</h4>
+													<p>
+														A project done for Endinbrough food (pvt) ltd. Project value is up to 9 Million rupees. Projetc complietion is 100%.
+													</p>
+													<br>
+													<p><a class="btn btn-primary" role="button" data-toggle="modal" data-target="#governmet1">More info</a>
+												</div>
+												<!-- Modal -->
+												<div class="modal fade" id="governmet1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+													<div class="modal-dialog" role="document">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																<h4 class="modal-title" id="myModalLabel">Endinbrough Food Factory</h4>
+															</div>
+															<div class="modal-body">
+																	<img class="modal-image" src="portfolio/government/1.jpeg" alt="...">
+																	
+																	<h4 class="model-heading" >Endinbrough Food Factory</h4>
+																	A project done for Endinbrough food (pvt) ltd. Project value is up to 9 Million rupees. Projetc complietion is 100%.
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+															</div>
+														</div>							
+													</div>
 												</div>
 											</div>
 										</div>
-										<div class="col-sm-4 col-md-3">
+
+										<div class="col-sm-12 col-md-3">
 											<div class="thumbnail">
-												<img src="img/download.svg" alt="...">
+												<a data-toggle="modal" data-target="#governmet2">
+													<img class="thumbnail_image" src="portfolio/government/2.jpeg" alt="...">
+												</a>
 												<div class="caption">
-												<h4>Thumbnail label</h4>
-												<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-												<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+													<h4>Endinbrough Food Factory</h4>
+													<p>
+														A project done for Endinbrough food (pvt) ltd. Project value is up to 9 Million rupees. Projetc complietion is 100%.
+													</p>
+													<br>
+													<p><a class="btn btn-primary" role="button" data-toggle="modal" data-target="#governmet2">More info</a>
+												</div>
+												<!-- Modal -->
+												<div class="modal fade" id="governmet2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+													<div class="modal-dialog" role="document">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																<h4 class="modal-title" id="myModalLabel">Endinbrough Food Factory</h4>
+															</div>
+															<div class="modal-body">
+																	<img class="modal-image" src="portfolio/government/2.jpeg" alt="...">
+																	
+																	<h4 class="model-heading" >Endinbrough Food Factory</h4>
+																	A project done for Endinbrough food (pvt) ltd. Project value is up to 9 Million rupees. Projetc complietion is 100%.
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+															</div>
+														</div>							
+													</div>
 												</div>
 											</div>
 										</div>
+
+										<div class="col-sm-12 col-md-3">
+											<div class="thumbnail">
+												<a data-toggle="modal" data-target="#governmet3">
+													<img class="thumbnail_image" src="portfolio/government/3.jpeg" alt="...">
+												</a>
+												<div class="caption">
+													<h4>Endinbrough Food Factory</h4>
+													<p>
+														A project done for Endinbrough food (pvt) ltd. Project value is up to 9 Million rupees. Projetc complietion is 100%.
+													</p>
+													<br>
+													<p><a class="btn btn-primary" role="button" data-toggle="modal" data-target="#governmet3">More info</a>
+												</div>
+												<!-- Modal -->
+												<div class="modal fade" id="governmet3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+													<div class="modal-dialog" role="document">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																<h4 class="modal-title" id="myModalLabel">Endinbrough Food Factory</h4>
+															</div>
+															<div class="modal-body">
+																	<img class="modal-image" src="portfolio/government/3.jpeg" alt="...">
+																	
+																	<h4 class="model-heading" >Endinbrough Food Factory</h4>
+																	A project done for Endinbrough food (pvt) ltd. Project value is up to 9 Million rupees. Projetc complietion is 100%.
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+															</div>
+														</div>							
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-sm-12 col-md-3">
+											<div class="thumbnail">
+												<a data-toggle="modal" data-target="#governmet4">
+													<img class="thumbnail_image" src="portfolio/government/4.jpeg" alt="...">
+												</a>
+												<div class="caption">
+													<h4>Endinbrough Food Factory</h4>
+													<p>
+														A project done for Endinbrough food (pvt) ltd. Project value is up to 9 Million rupees. Projetc complietion is 100%.
+													</p>
+													<br>
+													<p><a class="btn btn-primary" role="button" data-toggle="modal" data-target="#governmet4">More info</a>
+												</div>
+												<!-- Modal -->
+												<div class="modal fade" id="governmet4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+													<div class="modal-dialog" role="document">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																<h4 class="modal-title" id="myModalLabel">Endinbrough Food Factory</h4>
+															</div>
+															<div class="modal-body">
+																	<img class="modal-image" src="portfolio/government/4.jpeg" alt="...">
+																	
+																	<h4 class="model-heading" >Endinbrough Food Factory</h4>
+																	A project done for Endinbrough food (pvt) ltd. Project value is up to 9 Million rupees. Projetc complietion is 100%.
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+															</div>
+														</div>							
+													</div>
+												</div>
+											</div>
+										</div>
+
 									</div>
 								</div>
 								<div class="tab-pane" id="other" role="tabpanel">
 										<div class="row">
-											<div class="col-sm-4 col-md-3">
+											<div class="col-sm-12 col-md-3">
 												<div class="thumbnail">
-													<img src="img/download.svg" alt="...">
+													<a data-toggle="modal" data-target="#other1">
+														<img class="thumbnail_image" src="portfolio/other/1.jpeg" alt="...">
+													</a>
 													<div class="caption">
-													<h4>Thumbnail label</h4>
-													<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-													<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+														<h4>Endinbrough Food Factory</h4>
+														<p>
+															A project done for Endinbrough food (pvt) ltd. Project value is up to 9 Million rupees. Projetc complietion is 100%.
+														</p>
+														<br>
+														<p><a class="btn btn-primary" role="button" data-toggle="modal" data-target="#other1">More info</a>
+													</div>
+													<!-- Modal -->
+													<div class="modal fade" id="other1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+														<div class="modal-dialog" role="document">
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																	<h4 class="modal-title" id="myModalLabel">Endinbrough Food Factory</h4>
+																</div>
+																<div class="modal-body">
+																		<img class="modal-image" src="portfolio/other/1.jpeg" alt="...">
+																		
+																		<h4 class="model-heading" >Endinbrough Food Factory</h4>
+																		A project done for Endinbrough food (pvt) ltd. Project value is up to 9 Million rupees. Projetc complietion is 100%.
+																</div>
+																<div class="modal-footer">
+																	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																	<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+																</div>
+															</div>							
+														</div>
 													</div>
 												</div>
 											</div>
-											<div class="col-sm-4 col-md-3">
+
+											<div class="col-sm-12 col-md-3">
 												<div class="thumbnail">
-													<img src="img/download.svg" alt="...">
+													<a data-toggle="modal" data-target="#other2">
+														<img class="thumbnail_image" src="portfolio/other/2.jpeg" alt="...">
+													</a>
 													<div class="caption">
-													<h4>Thumbnail label</h4>
-													<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-													<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+														<h4>Endinbrough Food Factory</h4>
+														<p>
+															A project done for Endinbrough food (pvt) ltd. Project value is up to 9 Million rupees. Projetc complietion is 100%.
+														</p>
+														<br>
+														<p><a class="btn btn-primary" role="button" data-toggle="modal" data-target="#other2">More info</a>
+													</div>
+													<!-- Modal -->
+													<div class="modal fade" id="other2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+														<div class="modal-dialog" role="document">
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																	<h4 class="modal-title" id="myModalLabel">Endinbrough Food Factory</h4>
+																</div>
+																<div class="modal-body">
+																		<img class="modal-image" src="portfolio/other/2.jpeg" alt="...">
+																		
+																		<h4 class="model-heading" >Endinbrough Food Factory</h4>
+																		A project done for Endinbrough food (pvt) ltd. Project value is up to 9 Million rupees. Projetc complietion is 100%.
+																</div>
+																<div class="modal-footer">
+																	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																	<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+																</div>
+															</div>							
+														</div>
 													</div>
 												</div>
 											</div>
-											<div class="col-sm-4 col-md-3">
+
+											<div class="col-sm-12 col-md-3">
 												<div class="thumbnail">
-													<img src="img/download.svg" alt="...">
+													<a data-toggle="modal" data-target="#other3">
+														<img class="thumbnail_image" src="portfolio/other/3.jpg" alt="...">
+													</a>
 													<div class="caption">
-													<h4>Thumbnail label</h4>
-													<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-													<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+														<h4>Endinbrough Food Factory</h4>
+														<p>
+															A project done for Endinbrough food (pvt) ltd. Project value is up to 9 Million rupees. Projetc complietion is 100%.
+														</p>
+														<br>
+														<p><a class="btn btn-primary" role="button" data-toggle="modal" data-target="#other3">More info</a>
+													</div>
+													<!-- Modal -->
+													<div class="modal fade" id="other3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+														<div class="modal-dialog" role="document">
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																	<h4 class="modal-title" id="myModalLabel">Endinbrough Food Factory</h4>
+																</div>
+																<div class="modal-body">
+																		<img class="modal-image" src="portfolio/other/3.jpg" alt="...">
+																		
+																		<h4 class="model-heading" >Endinbrough Food Factory</h4>
+																		A project done for Endinbrough food (pvt) ltd. Project value is up to 9 Million rupees. Projetc complietion is 100%.
+																</div>
+																<div class="modal-footer">
+																	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																	<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+																</div>
+															</div>							
+														</div>
 													</div>
 												</div>
 											</div>
+
+											<div class="col-sm-12 col-md-3">
+												<div class="thumbnail">
+													<a data-toggle="modal" data-target="#other4">
+														<img class="thumbnail_image" src="portfolio/other/4.jpeg" alt="...">
+													</a>
+													<div class="caption">
+														<h4>Endinbrough Food Factory</h4>
+														<p>
+															A project done for Endinbrough food (pvt) ltd. Project value is up to 9 Million rupees. Projetc complietion is 100%.
+														</p>
+														<br>
+														<p><a class="btn btn-primary" role="button" data-toggle="modal" data-target="#other4">More info</a>
+													</div>
+													<!-- Modal -->
+													<div class="modal fade" id="other4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+														<div class="modal-dialog" role="document">
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																	<h4 class="modal-title" id="myModalLabel">Endinbrough Food Factory</h4>
+																</div>
+																<div class="modal-body">
+																		<img class="modal-image" src="portfolio/other/4.jpeg" alt="...">
+																		
+																		<h4 class="model-heading" >Endinbrough Food Factory</h4>
+																		A project done for Endinbrough food (pvt) ltd. Project value is up to 9 Million rupees. Projetc complietion is 100%.
+																</div>
+																<div class="modal-footer">
+																	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																	<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+																</div>
+															</div>							
+														</div>
+													</div>
+												</div>
+											</div>
+
 										</div>
 								</div>
 							</div>
@@ -252,26 +724,27 @@
 				<div class="col-sm-6">
 					<div class="contact-info-box address clearfix">
 						<h3><i class=" icon-map-marker"></i>Address:</h3>
-						<span>308 Negra Arroyo Lane<br>Albuquerque, New Mexico, 87111.</span>
+						<span>JSM Construction ( pvt ) Ltd<br>No 136 1/1<br>Poorwarama Road<br>Colombo 05</span>
 					</div>
 					<div class="contact-info-box phone clearfix">
 						<h3><i class="fa fa-phone"></i>Phone:</h3>
-						<span>1-800-BOO-YAHH</span>
+						<span>071 385 6585</span>
 					</div>
 					<div class="contact-info-box email clearfix">
 						<h3><i class="fa fa-pencil"></i>email:</h3>
-						<span>hello@knightstudios.com</span>
+						<span>info@jsmconstruction.lk</span>
 					</div>
 					<div class="contact-info-box hours clearfix">
 						<h3><i class="fa fa-clock-o"></i>Hours:</h3>
-						<span><strong>Monday - Thursday:</strong> 10am - 6pm<br><strong>Friday:</strong> People work on Fridays now?<br><strong>Saturday - Sunday:</strong> Best not to ask.</span>
+						<span><strong>Monday - Friday:</strong> 10am - 6pm</span>
 					</div>
 					<ul class="social-link">
-						<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<!-- <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li> -->
 						<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li class="pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></li>
-						<li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-						<li class="dribbble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+						<li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<!-- <li class="pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></li> -->
+						<!-- <li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li class="dribbble"><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
 					</ul>
 				</div>
 				<div class="col-sm-6">
@@ -371,52 +844,6 @@
 			});
 		})
 	</script>
-
-	<!-- <script type="text/javascript">
-		$(window).load(function() {
-
-
-			var $container = $('.portfolioContainer'),
-				$body = $('body'),
-				colW = 375,
-				columns = null;
-
-
-			$container.isotope({
-				// disable window resizing
-				resizable: true,
-				masonry: {
-					columnWidth: colW
-				}
-			});
-
-			$(window).smartresize(function() {
-				// check if columns has changed
-				var currentColumns = Math.floor(($body.width() - 30) / colW);
-				if (currentColumns !== columns) {
-					// set new column count
-					columns = currentColumns;
-					// apply width to container manually, then trigger relayout
-					$container.width(columns * colW)
-						.isotope('reLayout');
-				}
-
-			}).smartresize(); // trigger resize to set container width
-			$('.portfolioFilter a').click(function() {
-				$('.portfolioFilter .current').removeClass('current');
-				$(this).addClass('current');
-
-				var selector = $(this).attr('data-filter');
-				$container.isotope({
-
-					filter: selector,
-				});
-				return false;
-			});
-
-		});
-	</script> -->
-
 	<script src="js/lib/bootstrap/js/popper.min.js"></script>
     <script src="js/lib/bootstrap/js/bootstrap.min.js"></script>
 </body>
